@@ -1,0 +1,79 @@
+* .html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    text-align: center;
+    color: gray;
+}
+
+.turn-display {
+    color: #8cd3ff;
+    font-weight: bold;
+    position: relative;
+    position: fixed;
+    left: 80%;
+    transform: translate(-50%, -50%); // 要素自体の中心を正確に親の中心に合わせる
+}
+
+
+table {
+    // border-collapse: collapse;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    margin: 20px auto; 
+    justify-content: center;
+    align-items: center;
+    color: #8cd3ff;
+    width: 100px;
+    height: 100px;
+}
+
+td {
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    // margin: 10px;
+    font-size: 40px;
+    background-color: #f0f0f0;
+}
+
+
+.reset {
+    // display: block; // ブロックレベル要素に変更
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(255, 217, 252);
+    border-radius: 30px;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-appearance: none; //iOS Safariのデフォルトスタイルを無効化
+    left: 50%;
+    top: 80%; // 要素の上端を親要素の中央に配置
+    transform: translate(-50%, -50%); // 要素自体の中心を正確に親の中心に合わせる
+
+
+    &:hover {
+        font-weight: bold;
+        opacity: 1;
+        color: gray;
+    }
+}
+
+
+
+.under {
+    position: relative;
+    color: #faa192;
+    font-size: 2rem;
+    margin-top: 300px;
+    text-align: center;
+}
